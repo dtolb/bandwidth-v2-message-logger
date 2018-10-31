@@ -1,0 +1,32 @@
+{
+  "name": "bandwidth-v2-message-logger",
+  "version": "1.0.0",
+  "description": "logs messages to db",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtolb/bandwidth-v2-message-logger.git"
+  },
+  "keywords": [
+    "node",
+    "bandwidth",
+    "sms",
+    "logging"
+  ],
+  "author": "Dan Tolbert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dtolb/bandwidth-v2-message-logger/issues"
+  },
+  "homepage": "https://github.com/dtolb/bandwidth-v2-message-logger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "pg": "^7.6.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.41.0"
+  }
+}
