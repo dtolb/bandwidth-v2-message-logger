@@ -10,7 +10,7 @@ if (!connectionUrl) {
   throw new Error('Invalid or non-existing DATABASE_URL connection url');
 }
 
-const sequelize = new Sequelize(connectionUrl);
+const sequelize = new Sequelize(connectionUrl, {logging: false});
 
 
 fs

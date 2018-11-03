@@ -16,7 +16,7 @@ module.exports.saveMessage = async (req, res) => {
       throw new Error('Not yet ready to handle array of callbacks');
     }
     const messageEvent = req.body[0];
-    console.log(messageEvent);
+    //console.log(messageEvent);
     const message = {
       status: messageEvent.type,
       description: messageEvent.description,
@@ -26,7 +26,7 @@ module.exports.saveMessage = async (req, res) => {
       time: messageEvent.time
     };
     const newMessageEntry = await Messages.create(message);
-    console.log(`Saved message: ${newMessageEntry.id}`);
+    //console.log(`Saved message: ${newMessageEntry.id}`);
   }
   catch (e) {
     console.log('Error saving to database');
